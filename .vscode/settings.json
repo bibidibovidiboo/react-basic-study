@@ -1,0 +1,7 @@
+{
+  // 프로젝트 마다 설정이 가능 => 상단바 색상 변경
+  // "workbench.colorCustomizations": {
+  //   "titleBar.activeBackground": "#d83e33",
+  //   "titleBar.inactiveBackground": "#d83e33"
+  // }
+}
