@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -12,6 +12,7 @@ const Login = ({ authService }) => {
       state: { id: userId },
     });
   };
+
   const onLogin = event => {
     authService //
       .login(event.currentTarget.textContent)
@@ -20,7 +21,7 @@ const Login = ({ authService }) => {
 
   useEffect(() => {
     authService.onAuthChange(user => {
-      user && goToMaker(user.uid);
+      user && goToMaker(user.id);
     });
   });
 
